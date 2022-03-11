@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background: #363030;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Homepage Styles(index.html) */
+
+
+/* Navbar Styles */
+
+.nav-items {
+    background: #1a1a1a;
+    height: 72px;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item>a {
+    display: inline-block;
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    vertical-align: top;
+    padding: 7px 20px;
+    margin: 0 20px;
+    line-height: 35px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.nav-item>a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) and (min-width: 460px) {
+    .nav-item>a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-item>a {
+        font-size: 16px;
+        padding: 7px 0;
+    }
+}
+
+.portfolio-footer {
+    background: #1a1a1a;
+    color: #fff;
+    opacity: 0.5;
+    list-style: none;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 20px;
+}
+
+
+/* Welcome Section Styles */
+
+.welcome-section {
+    display: flex;
+}
+
+.welcome-text {
+    margin: auto;
+    padding: 0 50px;
+}
+
+.welcome-heading {
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 300;
+    z-index: 1;
+    margin: 15px 0;
+}
+
+.welcome-content {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 15px 0;
+    z-index: 1;
+    line-height: 35px;
+}
+
+.welcome-img {
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 796px) {
+    .welcome-img {
+        width: 470px;
+        height: 490px;
+    }
+    .welcome-text {
+        padding: 0 25px;
+    }
+    .welcome-heading {
+        font-size: 55px;
+    }
+    .welcome-content {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-text {
+        line-height: 30px;
+        padding: 20px;
+    }
+    .welcome-heading {
+        font-size: 40px;
+    }
+    .welcome-content {
+        font-size: 20px;
+    }
+    .welcome-img {
+        /* width: 100%;
+        height: 100%; */
+        max-width: 100%;
+        height: auto;
+    }
+    .portfolio-footer {
+        font-size: 16px;
+    }
+}
+
+
+/* Project Page Styles(projects.html) */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.project-title {
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+.project-tile {
+    margin: 15px;
+    max-width: 250px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile .project-img {
+    width: 260px;
+    height: 150px;
+    object-fit: fill;
+}
+
+.project-tile .project-name {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+}
+
+@media screen and (max-width: 870px) and (min-width: 625px) {
+    .project-title {
+        font-size: 34px;
+    }
+    .projects-container {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .project-title {
+        font-size: 28px;
+    }
+    .projects-container {
+        margin: 10px 0 0 0;
+    }
+}
+
+
+/* Contact Page Styles(contact.html) */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: gray;
+}
+
+.contact-title {
+    font-size: 70px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.contact-subtitle {
+    font-style: italic;
+    margin: 15px 10px 25px;
+    font-size: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+    font-size: 27px;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 605px) {
+    .contact-title {
+        font-size: 55px;
+    }
+    .contact-subtitle {
+        font-size: 20px;
+    }
+    .contact-details {
+        font-size: 20px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-title {
+        font-size: 45px;
+    }
+    .contact-subtitle {
+        font-size: 20px;
+        margin: 15px 10px;
+    }
+    .contact-details {
+        font-size: 17px;
+        margin: 5px;
+    }
+    .contact-links {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .contact-title {
+        font-size: 35px;
+    }
+}
