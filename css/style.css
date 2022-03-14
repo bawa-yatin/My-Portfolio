@@ -64,11 +64,14 @@ body {
 .portfolio-footer {
     background: #1a1a1a;
     color: #fff;
-    opacity: 0.5;
     list-style: none;
     text-align: center;
     padding: 25px 10px;
     font-size: 20px;
+}
+
+.footer-text {
+    opacity: 0.5;
 }
 
 
@@ -218,7 +221,7 @@ body {
 .skills-section {
     text-align: center;
     padding: 2rem;
-    background-color: #fff;
+    background-color: #062c30;
 }
 
 .skills-title {
@@ -226,6 +229,8 @@ body {
     font-size: 40px;
     font-weight: bold;
     margin: 15px 0;
+    color: rgb(243, 241, 241);
+    opacity: 0.8;
 }
 
 .skills-container {
@@ -250,7 +255,7 @@ body {
     float: left;
     min-width: 1%;
     height: 100%;
-    background: cornflowerblue;
+    background: rgb(100, 148, 238);
 }
 
 .skill-label {
