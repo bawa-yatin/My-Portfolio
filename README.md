@@ -7,4 +7,5 @@
 
 - Home Page
 - Projects Page
+- Skills Page
 - Contact Page
