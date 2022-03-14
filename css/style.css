@@ -55,8 +55,9 @@ body {
 
 @media screen and (max-width: 450px) {
     .nav-item>a {
-        font-size: 18px;
+        font-size: 17px;
         padding: 7px 0;
+        margin: 0 10px;
     }
 }
 
@@ -208,6 +209,77 @@ body {
     }
     .projects-container {
         margin: 10px 0 0 0;
+    }
+}
+
+
+/* Skill Page Styles(skills.html) */
+
+.skills-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.skills-title {
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    justify-content: center;
+}
+
+.skill-progress {
+    margin: 20px;
+    height: 30px;
+    width: 90%;
+    overflow: hidden;
+    background: #e5e5e5;
+    border-radius: 25px;
+    max-width: 500px;
+}
+
+.skill-bar {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+    background: cornflowerblue;
+}
+
+.skill-label {
+    position: absolute;
+    transform: translate(50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1145px) {
+    .skills-section {
+        padding: 1rem;
+    }
+    .skill-progress {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .skills-section {
+        padding: 1rem;
+    }
+    .skills-container {
+        margin: 10px 0;
+    }
+    .skills-title {
+        font-size: 32px;
+    }
+    .skill-progress {
+        width: 100%;
     }
 }
 
