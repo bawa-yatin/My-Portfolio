@@ -55,7 +55,7 @@ body {
 
 @media screen and (max-width: 450px) {
     .nav-item>a {
-        font-size: 16px;
+        font-size: 18px;
         padding: 7px 0;
     }
 }
@@ -107,7 +107,7 @@ body {
 @media screen and (max-width: 1024px) and (min-width: 796px) {
     .welcome-img {
         width: 470px;
-        height: 490px;
+        height: 505px;
     }
     .welcome-text {
         padding: 0 25px;
@@ -137,8 +137,6 @@ body {
         font-size: 20px;
     }
     .welcome-img {
-        /* width: 100%;
-        height: 100%; */
         max-width: 100%;
         height: auto;
     }
@@ -235,7 +233,7 @@ body {
 
 .contact-subtitle {
     font-style: italic;
-    margin: 15px 10px 25px;
+    margin: 15px 10px 20px;
     font-size: 25px;
 }
 
@@ -270,6 +268,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .contact-section {
+        padding: 0 1.2rem;
+    }
     .contact-title {
         font-size: 45px;
     }
@@ -279,7 +280,7 @@ body {
     }
     .contact-details {
         font-size: 17px;
-        margin: 5px;
+        margin: 6px;
     }
     .contact-links {
         flex-direction: column;
